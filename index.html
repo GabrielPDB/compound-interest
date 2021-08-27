@@ -13,6 +13,14 @@
     />
   </head>
   <body>
+    <header>
+      <h1>Juros Compostos</h1>
+      <p>
+        Informe os campos de que tem conhecimento, pressione
+        <strong>Calcular</strong> e o resultado aparecerá no campo faltante
+      </p>
+    </header>
+
     <div class="inputs">
       <label for="amount">Montante</label>
       <input type="number" name="amount" id="amount" />
@@ -30,8 +38,10 @@
 
       <label for="time">Período de tempo</label>
       <input type="number" name="time" id="time" />
-
-      <button onclick="chooseCalc()">Calcular</button>
+    </div>
+    <div class="buttons">
+      <button class="clear" onclick="clear()">Limpar</button>
+      <button class="done" onclick="chooseCalc()">Calcular</button>
     </div>
 
     <script src="./scripts.js"></script>

@@ -12,7 +12,7 @@ function calculateAmount() {
   amount.value = total.toFixed(2)
 }
 function calculateCapital() {
-  capital.style['color'] = 'red'
+  capital.style['color'] = 'green'
 
   const total =
     amount.value / Math.pow(1 + interestRate.value / 100, time.value)
@@ -20,14 +20,14 @@ function calculateCapital() {
   capital.value = total.toFixed(2)
 }
 function calculateInterestRate() {
-  interestRate.style['color'] = 'red'
+  interestRate.style['color'] = 'green'
 
   const total = ((amount.value / capital.value) ** (1 / time.value) - 1) * 100
 
   interestRate.value = total.toFixed(2)
 }
 function calculateTime() {
-  time.style['color'] = 'red'
+  time.style['color'] = 'green'
   // Aqui tá complexo
 }
 
@@ -41,6 +41,13 @@ function chooseCalc() {
   } else if (calc.time.value == 0) {
     calculateTime()
   }
+}
+
+function clear() {
+  amount.value = ''
+  capital.value = ''
+  interestRate.value = ''
+  time.value = ''
 }
 
 console.log()
