@@ -49,6 +49,12 @@ input {
   text-align: center;
 }
 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 input::placeholder {
   color: white;
 }
@@ -68,4 +74,5 @@ button {
   outline: none;
   border-radius: 1rem;
   width: 30%;
+  cursor: pointer;
 }
