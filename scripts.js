@@ -52,4 +52,8 @@ function clearFields() {
   calc.capital.value = ''
   calc.interestRate.value = ''
   calc.time.value = ''
+  calc.amount.style['color'] = 'white'
+  calc.capital.style['color'] = 'white'
+  calc.interestRate.style['color'] = 'white'
+  calc.time.style['color'] = 'white'
 }
