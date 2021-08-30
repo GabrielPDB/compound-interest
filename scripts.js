@@ -14,6 +14,7 @@ function calculateAmount() {
   calc.amount.type = 'text'
   calc.amount.value = formatMoneyValue(total)
 }
+
 function calculateCapital() {
   calc.capital.style['color'] = 'green'
 
@@ -24,6 +25,7 @@ function calculateCapital() {
   calc.capital.type = 'text'
   calc.capital.value = formatMoneyValue(total)
 }
+
 function calculateInterestRate() {
   calc.interestRate.style['color'] = 'green'
 
@@ -34,6 +36,7 @@ function calculateInterestRate() {
   calc.interestRate.type = 'text'
   calc.interestRate.value = formatPercentValue(total)
 }
+
 function calculateTime() {
   calc.time.style['color'] = 'green'
   // Aqui tá complexo
@@ -90,5 +93,3 @@ function formatMoneyValue(total) {
 function formatPercentValue(value) {
   return `${value.toFixed()} %`
 }
-
-/*  */
