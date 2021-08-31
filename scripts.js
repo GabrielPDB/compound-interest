@@ -39,7 +39,12 @@ function calculateInterestRate() {
 
 function calculateTime() {
   calc.time.style['color'] = 'green'
-  // Aqui tá complexo
+
+  const total =
+    Math.log(calc.amount.value / calc.capital.value) /
+    Math.log(1 + calc.interestRate.value / 100)
+
+  calc.time.value = total.toFixed(2)
 }
 
 function chooseCalc() {
