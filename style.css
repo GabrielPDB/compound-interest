@@ -75,4 +75,11 @@ button {
   border-radius: 1rem;
   width: 30%;
   cursor: pointer;
+  transition: 400ms;
+}
+
+button:focus,
+button:hover {
+  background-color: aqua;
+  color: black;
 }
